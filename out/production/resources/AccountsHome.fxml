@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="682.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.AccountHome.AccountsHomeController">
+   <children>
+      <Label layoutX="114.0" layoutY="26.0" prefHeight="43.0" prefWidth="498.0" text="Account Home" textAlignment="CENTER" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="26.0">
+         <font>
+            <Font name="Avenir Next Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcome" layoutX="126.0" layoutY="69.0" prefHeight="17.0" prefWidth="120.0" text="Welcome, Devansh" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="354.0" AnchorPane.topAnchor="69.0" />
+      <JFXTextField fx:id="withdrawAmount" layoutX="213.0" layoutY="208.0" prefHeight="27.0" prefWidth="251.0" promptText="Withdraw Amount" />
+      <JFXButton layoutX="55.0" layoutY="208.0" onAction="#withdrawButton" prefHeight="27.0" prefWidth="141.0" text="Withdraw Money" />
+      <Label fx:id="errorMessage" layoutX="65.0" layoutY="179.0" prefHeight="27.0" prefWidth="490.0" textFill="#ee0000" />
+      <Label fx:id="accountNumber" layoutX="55.0" layoutY="117.0" prefHeight="23.0" prefWidth="258.0" text="Account Number: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentBalance" layoutX="55.0" layoutY="153.0" prefHeight="23.0" prefWidth="258.0" text="Current Balance: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="55.0" layoutY="242.0" onAction="#depositButton" prefHeight="27.0" prefWidth="141.0" text="Deposit Money" />
+      <JFXTextField fx:id="depositAmount" layoutX="213.0" layoutY="242.0" prefHeight="27.0" prefWidth="251.0" promptText="Deposit Amount" />
+      <JFXButton layoutX="55.0" layoutY="278.0" onAction="#sendMoney" prefHeight="27.0" prefWidth="141.0" text="Send Money" />
+      <JFXTreeTableView fx:id="tableView" layoutX="60.0" layoutY="321.0" prefHeight="329.0" prefWidth="317.0" />
+   </children>
+</AnchorPane>

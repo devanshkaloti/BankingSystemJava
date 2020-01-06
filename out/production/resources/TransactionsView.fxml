@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.AccountHome.AccountsHomeController">
+   <children>
+      <Label layoutX="195.0" layoutY="26.0" prefHeight="43.0" prefWidth="224.0" text="Account Home" textAlignment="CENTER" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="26.0">
+         <font>
+            <Font name="Avenir Next Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcome" layoutX="237.0" layoutY="69.0" prefHeight="17.0" prefWidth="120.0" text="Welcome, Devansh" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="243.0" AnchorPane.topAnchor="69.0" />
+      <JFXTextField fx:id="withdrawAmount" layoutX="213.0" layoutY="245.0" prefHeight="27.0" prefWidth="251.0" promptText="Withdraw Amount" />
+      <JFXButton buttonType="RAISED" layoutX="66.0" layoutY="209.0" onAction="#loginButton" prefHeight="27.0" prefWidth="120.0" text="Send Money" />
+      <JFXButton layoutX="55.0" layoutY="245.0" prefHeight="27.0" prefWidth="141.0" text="Withdraw Money" />
+      <Label fx:id="errorMessage" layoutX="36.0" layoutY="337.0" prefHeight="27.0" prefWidth="490.0" textFill="#ee0000" />
+      <Label fx:id="accountNumber" layoutX="55.0" layoutY="117.0" prefHeight="23.0" prefWidth="258.0" text="Account Number: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentBalance" layoutX="55.0" layoutY="153.0" prefHeight="23.0" prefWidth="258.0" text="Current Balance: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="55.0" layoutY="279.0" onAction="#moveToRegisterScreen" prefHeight="27.0" prefWidth="141.0" text="Deposit Money" />
+      <JFXTextField fx:id="depositAmount" layoutX="213.0" layoutY="279.0" prefHeight="27.0" prefWidth="251.0" promptText="Email" text="Deposit Amount" />
+   </children>
+</AnchorPane>
